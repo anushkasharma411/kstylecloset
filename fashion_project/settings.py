@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY
 SECRET_KEY = 'django-insecure-(c9il3xti2g$&8vo!bi9wpm&k8v-)srzrf+1q5svzyc@47!1z!'
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kstylecloset-1.onrender.com']
 
 
 # APPLICATIONS
