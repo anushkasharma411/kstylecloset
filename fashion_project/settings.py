@@ -62,11 +62,10 @@ TEMPLATES = [
 
 
 # DATABASE
+import dj_database_url
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse('postgresql://kstyle_db_user:wmz3m4brg56DTGA3t6hbzSIcaneTJTOc@dpg-d7cg8u99rddc739n80e0-a/kstyle_db')
 }
 
 
