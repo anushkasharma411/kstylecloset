@@ -4,4 +4,4 @@ dj-database-url
 psycopg2-binary
 cloudinary
 django-cloudinary-storage
-pillow
+Pillow==10.0.0
