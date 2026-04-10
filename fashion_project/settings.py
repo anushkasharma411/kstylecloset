@@ -101,11 +101,7 @@ USE_TZ = True
 
 # STATIC FILES
 STATIC_URL = 'static/'
-
-# ✅ OPTIONAL (recommended later)
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+STATIC_ROOT = 'staticfiles'
 
 
 # DEFAULT PRIMARY KEY
