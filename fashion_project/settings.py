@@ -1,5 +1,8 @@
 
 from pathlib import Path
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -110,3 +113,13 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dkpn2wuxs',
+    'API_KEY': '943378133761963',
+    'API_SECRET': 'nmLNxGbPkS',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
