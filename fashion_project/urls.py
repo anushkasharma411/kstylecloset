@@ -7,3 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('fashion_app.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns = [
+    # your urls
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
