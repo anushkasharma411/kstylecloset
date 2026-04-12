@@ -1,8 +1,10 @@
-from django.urls import path
-from . import views
+from django.urls import path, include
+from fashion_app import views
+from django.contrib import admin
 
 urlpatterns = [
-    path('', views.home),
+    path('', views.home, name='home'),
+    path('admin/', admin.site.urls),
 
     path('category/<str:drama_name>/', views.category_view),
     path('product/<int:product_id>/', views.product_detail),
@@ -16,5 +18,6 @@ urlpatterns = [
     path('remove-from-wishlist/<int:product_id>/', views.remove_from_wishlist),
     path('checkout/', views.checkout, name='checkout'),
     path('increase/<int:product_id>/', views.increase_quantity),
-path('decrease/<int:product_id>/', views.decrease_quantity),
+    path('decrease/<int:product_id>/', views.decrease_quantity),
+
 ]
