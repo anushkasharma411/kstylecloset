@@ -1,10 +1,8 @@
-from django.urls import path, include
-from fashion_app import views
-from django.contrib import admin
+from django.urls import path
+from . import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('admin/', admin.site.urls),
 
     path('category/<str:drama_name>/', views.category_view),
     path('product/<int:product_id>/', views.product_detail),
