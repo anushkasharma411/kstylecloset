@@ -118,7 +118,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'dkpn2wuxs',
     'API_KEY': '943378133761963',
-    'API_SECRET': 'nmLNxGbPkS',
+    'API_SECRET': 'nmLNxGbPkShtvoSWAEgB2-rZlQc',
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
