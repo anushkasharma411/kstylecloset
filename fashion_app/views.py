@@ -127,7 +127,7 @@ def add_to_wishlist(request, product_id):
         wishlist.append(product_id)
 
     request.session['wishlist'] = wishlist
-    return redirect('/wishlist/')
+    return redirect('wishlist')
 
 
 def wishlist_view(request):
