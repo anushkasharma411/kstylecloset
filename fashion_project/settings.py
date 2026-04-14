@@ -116,10 +116,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 cloudinary.config(
-    cloud_name = os.getenv("dkpn2wuxs"),
-    api_key = os.getenv("943378133761963"),
-    api_secret = os.getenv("nmLNxGbPkShtvoSWAEgB2-rZlQc")
+    cloud_name = "dkpn2wuxs",
+    api_key = "943378133761963",
+    api_secret = "nmLNxGbPkShtvoSWAEgB2-rZlQc"
 )
-print("CLOUD NAME:", os.environ.get("CLOUD_NAME"))
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
